@@ -1,3 +1,6 @@
+### Exercise Program
+This creates 531 for beginners program that follows ABA-BAB
+
 ### Requirements:
 shell with python3 
 
