@@ -28,7 +28,7 @@ allows 3-week 5/3/1 cycle to start day 1 on A squat & bench or B deadlift & pres
 
 ```
 
-### Example output:
+### Example output (start B):
 ```
 
 ===============================
