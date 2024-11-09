@@ -24,7 +24,7 @@ python3 beginner531.py --help
 
 # start argument
 allows 3-week 5/3/1 cycle to start day 1 on A squat & bench or B deadlift & press
-`--start="A" or --start="B"`
+--start="A" or --start="B"
 
 ```
 
