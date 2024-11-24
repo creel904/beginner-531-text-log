@@ -3,6 +3,8 @@ This creates 531 for beginners program that follows ABA-BAB
 For upper-body movements it follows Second-Set-Last SSLx5 and last set as AMRAP + set.
 For lower-body movements it follows First-Set-Last FSLx5 and last set as AMRAP + set.
 
+Additionally, it adds accessories that are antagonists to that days movements (ie for bench press, horizontal rows would be a good antagonist accessory).
+
 ### Requirements:
 shell with python3 
 
