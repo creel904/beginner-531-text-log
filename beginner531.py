@@ -5,7 +5,6 @@ import argparse
 def rd5(x, base=5):
   return base * round(x/base)
 
-# Defining main function
 def main():
     parser = argparse.ArgumentParser()
 
@@ -32,22 +31,22 @@ def main():
         templateStr = '''\
 
 ===============================
-5/3/1 Week 1 (65%, 75%, 85%)
+5/3/1 Week 1 (65%(x16), 75%(x10), 85%(x6))
 
 -------------------------------
 W1d1
 
-Press (TM {press}: 65%, 75%, 85%)
+Press (TM {press}: 65%(x16), 75%(x10), 85%(x6))
 5 {p11}
 5 {p12}
 5+ {p13}
-5 {p11}
-5 {p11}
-5 {p11}
-5 {p11}
-5+ {p11}
+5 {p12}
+5 {p12}
+5 {p12}
+5 {p12}
+5+ {p12}
 
-Deadlift (TM {deadlift}: 65%, 75%, 85%)
+Deadlift (TM {deadlift}: 65%(x16), 75%(x10), 85%(x6))
 5 {d11}
 5 {d12}
 5+ {d13}
@@ -57,10 +56,15 @@ Deadlift (TM {deadlift}: 65%, 75%, 85%)
 5 {d11}
 5+ {d11}
 
+Vertical Pull
+Quad
+
+
+
 -------------------------------
 W1d2
 
-Squat (TM {squat}: 65%, 75%, 85%)
+Squat (TM {squat}: 65%(x16), 75%(x10), 85%(x6))
 5 {s11}
 5 {s12}
 5+ {s13}
@@ -70,30 +74,33 @@ Squat (TM {squat}: 65%, 75%, 85%)
 5 {s11}
 5+ {s11}
 
-Bench (TM {bench}: 65%, 75%, 85%)
+Bench (TM {bench}: 65%(x16), 75%(x10), 85%(x6))
 5 {b11}
 5 {b12}
 5+ {b13}
-5 {b11}
-5 {b11}
-5 {b11}
-5 {b11}
-5+ {b11}
+5 {b12}
+5 {b12}
+5 {b12}
+5 {b12}
+5+ {b12}
+
+Horizontal pull
+Hamstrings
 
 -------------------------------
 W1d3
 
-Press (TM {press}: 65%, 75%, 85%)
+Press (TM {press}: 65%(x16), 75%(x10), 85%(x6))
 5 {p11}
 5 {p12}
 5+ {p13}
-5 {p11}
-5 {p11}
-5 {p11}
-5 {p11}
-5+ {p11}
+5 {p12}
+5 {p12}
+5 {p12}
+5 {p12}
+5+ {p12}
 
-Deadlift (TM {deadlift}: 65%, 75%, 85%)
+Deadlift (TM {deadlift}: 65%(x16), 75%(x10), 85%(x6))
 5 {d11}
 5 {d12}
 5+ {d13}
@@ -103,24 +110,26 @@ Deadlift (TM {deadlift}: 65%, 75%, 85%)
 5 {d11}
 5+ {d11}
 
+Vertical Pull
+Quad
 
 ===============================
-5/3/1 Week 2 (70%, 80%, 90%)
+5/3/1 Week 2 (70%(x12), 80%(x8), 90%(4))
 
 -------------------------------
 Wk2d1
 
-Bench (TM {bench}: 70%, 80%, 90%)
+Bench (TM {bench}: 70%(x12), 80%(x8), 90%(4))
 3 {b21}
 3 {b22}
 3+ {b23}
-5 {b21}
-5 {b21}
-5 {b21}
-5 {b21}
-5+ {b21}
+5 {b22}
+5 {b22}
+5 {b22}
+5 {b22}
+5+ {b22}
 
-Squat (TM {squat}: 70%, 80%, 90%)
+Squat (TM {squat}: 70%(x12), 80%(x8), 90%(4))
 3 {s21}
 3 {s22}
 3+ {s23}
@@ -130,20 +139,23 @@ Squat (TM {squat}: 70%, 80%, 90%)
 5 {s21}
 5+ {s21}
 
+Horizontal pull
+Hamstrings
+
 -------------------------------
 Wk2d2
 
-Press (TM {press}: 70%, 80%, 90%)
+Press (TM {press}: 70%(x12), 80%(x8), 90%(4))
 3 {p21}
 3 {p22}
 3+ {p23}
-5 {p21}
-5 {p21}
-5 {p21}
-5 {p21}
-5+ {p21}
+5 {p22}
+5 {p22}
+5 {p22}
+5 {p22}
+5+ {p22}
 
-Deadlift (TM {deadlift}: 70%, 80%, 90%)
+Deadlift (TM {deadlift}: 70%(x12), 80%(x8), 90%(4))
 3 {d21}
 3 {d22}
 3+ {d23}
@@ -153,20 +165,23 @@ Deadlift (TM {deadlift}: 70%, 80%, 90%)
 5 {d21}
 5+ {d21}
 
+Vertical Pull
+Quad
+
 -------------------------------
 Wk2d3
 
-Bench (TM {bench}: 70%, 80%, 90%)
+Bench (TM {bench}: 70%(x12), 80%(x8), 90%(4))
 3 {b21}
 3 {b22}
 3+ {b23}
-5 {b21}
-5 {b21}
-5 {b21}
-5 {b21}
-5+ {b21}
+5 {b22}
+5 {b22}
+5 {b22}
+5 {b22}
+5+ {b22}
 
-Squat (TM {squat}: 70%, 80%, 90%)
+Squat (TM {squat}: 70%(x12), 80%(x8), 90%(4))
 3 {s21}
 3 {s22}
 3+ {s23}
@@ -176,14 +191,17 @@ Squat (TM {squat}: 70%, 80%, 90%)
 5 {s21}
 5+ {s21}
 
+Horizontal pull
+Hamstrings
+
 
 ===============================
-5/3/1 Week 3 (75%, 85%, 95%)
+5/3/1 Week 3 (75%(x10), 85%(x6), 95%(x2))
 
 -------------------------------
 Wk3d1
 
-Deadlift (TM {deadlift}: 75%, 85%, 95%)
+Deadlift (TM {deadlift}: 75%(x10), 85%(x6), 95%(x2))
 5 {d31}
 3 {d32}
 1+ {d33}
@@ -193,30 +211,33 @@ Deadlift (TM {deadlift}: 75%, 85%, 95%)
 5 {d31}
 5+ {d31}
 
-Press (TM {press}: 75%, 85%, 95%)
+Press (TM {press}: 75%(x10), 85%(x6), 95%(x2))
 5 {p31}
 3 {p32}
 1+ {p33}
-5 {p31}
-5 {p31}
-5 {p31}
-5 {p31}
-5+ {p31}
+5 {p32}
+5 {p32}
+5 {p32}
+5 {p32}
+5+ {p32}
+
+Vertical Pull
+Quad
 
 -------------------------------
 Wk3d2
 
-Bench (TM {bench}: 75%, 85%, 95%)
+Bench (TM {bench}: 75%(x10), 85%(x6), 95%(x2))
 5 {b31}
 3 {b32}
 1+ {b33}
-5 {b31}
-5 {b31}
-5 {b31}
-5 {b31}
-5+ {b31}
+5 {b32}
+5 {b32}
+5 {b32}
+5 {b32}
+5+ {b32}
 
-Squat (TM {squat}: 75%, 85%, 95%)
+Squat (TM {squat}: 75%(x10), 85%(x6), 95%(x2))
 5 {s31}
 3 {s32}
 1+ {s33}
@@ -226,10 +247,13 @@ Squat (TM {squat}: 75%, 85%, 95%)
 5 {s31}
 5+ {s31}
 
+Horizontal pull
+Hamstrings
+
 -------------------------------
 Wk3d3
 
-Deadlift (TM {deadlift}: 75%, 85%, 95%)
+Deadlift (TM {deadlift}: 75%(x10), 85%(x6), 95%(x2))
 5 {d31}
 3 {d32}
 1+ {d33}
@@ -239,15 +263,18 @@ Deadlift (TM {deadlift}: 75%, 85%, 95%)
 5 {d31}
 5+ {d31}
 
-Press (TM {press}: 75%, 85%, 95%)
+Press (TM {press}: 75%(x10), 85%(x6), 95%(x2))
 5 {p31}
 3 {p32}
 1+ {p33}
-5 {p31}
-5 {p31}
-5 {p31}
-5 {p31}
-5+ {p31}
+5 {p32}
+5 {p32}
+5 {p32}
+5 {p32}
+5+ {p32}
+
+Vertical Pull
+Quad
 
     '''.format(squat=squat, bench=bench, deadlift=deadlift, press=press, 
     s11=rd5(squat*week1[0]/100), s12=rd5(squat*week1[1]/100), s13=rd5(squat*week1[2]/100),
@@ -269,22 +296,22 @@ Press (TM {press}: 75%, 85%, 95%)
         templateStr = '''\
 
 ===============================
-5/3/1 Week 1 (65%, 75%, 85%)
+5/3/1 Week 1 (65%(x16), 75%(x10), 85%(x6))
 
 -------------------------------
 W1d1
 
-Bench (TM {bench}: 65%, 75%, 85%)
+Bench (TM {bench}: 65%(x16), 75%(x10), 85%(x6))
 5 {b11}
 5 {b12}
 5+ {b13}
-5 {b11}
-5 {b11}
-5 {b11}
-5 {b11}
-5+ {b11}
+5 {b12}
+5 {b12}
+5 {b12}
+5 {b12}
+5+ {b12}
 
-Squat (TM {squat}: 65%, 75%, 85%)
+Squat (TM {squat}: 65%(x16), 75%(x10), 85%(x6))
 5 {s11}
 5 {s12}
 5+ {s13}
@@ -294,20 +321,23 @@ Squat (TM {squat}: 65%, 75%, 85%)
 5 {s11}
 5+ {s11}
 
+Horizontal pull
+Hamstrings
+
 -------------------------------
 W1d2
 
-Press (TM {press}: 65%, 75%, 85%)
+Press (TM {press}: 65%(x16), 75%(x10), 85%(x6))
 5 {p11}
 5 {p12}
 5+ {p13}
-5 {p11}
-5 {p11}
-5 {p11}
-5 {p11}
-5+ {p11}
+5 {p12}
+5 {p12}
+5 {p12}
+5 {p12}
+5+ {p12}
 
-Deadlift (TM {deadlift}: 65%, 75%, 85%)
+Deadlift (TM {deadlift}: 65%(x16), 75%(x10), 85%(x6))
 5 {d11}
 5 {d12}
 5+ {d13}
@@ -317,10 +347,13 @@ Deadlift (TM {deadlift}: 65%, 75%, 85%)
 5 {d11}
 5+ {d11}
 
+Vertical Pull
+Quad
+
 -------------------------------
 W1d3
 
-Squat (TM {squat}: 65%, 75%, 85%)
+Squat (TM {squat}: 65%(x16), 75%(x10), 85%(x6))
 5 {s11}
 5 {s12}
 5+ {s13}
@@ -330,23 +363,26 @@ Squat (TM {squat}: 65%, 75%, 85%)
 5 {s11}
 5+ {s11}
 
-Bench (TM {bench}: 65%, 75%, 85%)
+Bench (TM {bench}: 65%(x16), 75%(x10), 85%(x6))
 5 {b11}
 5 {b12}
 5+ {b13}
-5 {b11}
-5 {b11}
-5 {b11}
-5 {b11}
-5+ {b11}
+5 {b12}
+5 {b12}
+5 {b12}
+5 {b12}
+5+ {b12}
+
+Horizontal pull
+Hamstrings
 
 ===============================
-5/3/1 Week 2 (70%, 80%, 90%)
+5/3/1 Week 2 (70%(x12), 80%(x8), 90%(4))
 
 -------------------------------
 Wk2d1
 
-Deadlift (TM {deadlift}: 70%, 80%, 90%)
+Deadlift (TM {deadlift}: 70%(x12), 80%(x8), 90%(4))
 3 {d21}
 3 {d22}
 3+ {d23}
@@ -356,30 +392,33 @@ Deadlift (TM {deadlift}: 70%, 80%, 90%)
 5 {d21}
 5+ {d21}
 
-Press (TM {press}: 70%, 80%, 90%)
+Press (TM {press}: 70%(x12), 80%(x8), 90%(4))
 3 {p21}
 3 {p22}
 3+ {p23}
-5 {p21}
-5 {p21}
-5 {p21}
-5 {p21}
-5+ {p21}
+5 {p22}
+5 {p22}
+5 {p22}
+5 {p22}
+5+ {p22}
+
+Vertical Pull
+Quad
 
 -------------------------------
 Wk2d2
 
-Bench (TM {bench}: 70%, 80%, 90%)
+Bench (TM {bench}: 70%(x12), 80%(x8), 90%(4))
 3 {b21}
 3 {b22}
 3+ {b23}
-5 {b21}
-5 {b21}
-5 {b21}
-5 {b21}
-5+ {b21}
+5 {b22}
+5 {b22}
+5 {b22}
+5 {b22}
+5+ {b22}
 
-Squat (TM {squat}: 70%, 80%, 90%)
+Squat (TM {squat}: 70%(x12), 80%(x8), 90%(4))
 3 {s21}
 3 {s22}
 3+ {s23}
@@ -389,20 +428,23 @@ Squat (TM {squat}: 70%, 80%, 90%)
 5 {s21}
 5+ {s21}
 
+Horizontal pull
+Hamstrings
+
 -------------------------------
 Wk2d3
 
-Press (TM {press}: 70%, 80%, 90%)
+Press (TM {press}: 70%(x12), 80%(x8), 90%(4))
 3 {p21}
 3 {p22}
 3+ {p23}
-5 {p21}
-5 {p21}
-5 {p21}
-5 {p21}
-5+ {p21}
+5 {p22}
+5 {p22}
+5 {p22}
+5 {p22}
+5+ {p22}
 
-Deadlift (TM {deadlift}: 70%, 80%, 90%)
+Deadlift (TM {deadlift}: 70%(x12), 80%(x8), 90%(4))
 3 {d21}
 3 {d22}
 3+ {d23}
@@ -412,14 +454,17 @@ Deadlift (TM {deadlift}: 70%, 80%, 90%)
 5 {d21}
 5+ {d21}
 
+Vertical Pull
+Quad
+
 
 ===============================
-5/3/1 Week 3 (75%, 85%, 95%)
+5/3/1 Week 3 (75%(x10), 85%(x6), 95%(x2))
 
 -------------------------------
 Wk3d1
 
-Squat (TM {squat}: 75%, 85%, 95%)
+Squat (TM {squat}: 75%(x10), 85%(x6), 95%(x2))
 5 {s31}
 3 {s32}
 1+ {s33}
@@ -429,20 +474,23 @@ Squat (TM {squat}: 75%, 85%, 95%)
 5 {s31}
 5+ {s31}
 
-Bench (TM {bench}: 75%, 85%, 95%)
+Bench (TM {bench}: 75%(x10), 85%(x6), 95%(x2))
 5 {b31}
 3 {b32}
 1+ {b33}
-5 {b31}
-5 {b31}
-5 {b31}
-5 {b31}
-5+ {b31}
+5 {b32}
+5 {b32}
+5 {b32}
+5 {b32}
+5+ {b32}
+
+Horizontal pull
+Hamstrings
 
 -------------------------------
 Wk3d2
 
-Deadlift (TM {deadlift}: 75%, 85%, 95%)
+Deadlift (TM {deadlift}: 75%(x10), 85%(x6), 95%(x2))
 5 {d31}
 3 {d32}
 1+ {d33}
@@ -452,30 +500,33 @@ Deadlift (TM {deadlift}: 75%, 85%, 95%)
 5 {d31}
 5+ {d31}
 
-Press (TM {press}: 75%, 85%, 95%)
+Press (TM {press}: 75%(x10), 85%(x6), 95%(x2))
 5 {p31}
 3 {p32}
 1+ {p33}
-5 {p31}
-5 {p31}
-5 {p31}
-5 {p31}
-5+ {p31}
+5 {p32}
+5 {p32}
+5 {p32}
+5 {p32}
+5+ {p32}
+
+Vertical Pull
+Quad
 
 -------------------------------
 Wk3d3
 
-Bench (TM {bench}: 75%, 85%, 95%)
+Bench (TM {bench}: 75%(x10), 85%(x6), 95%(x2))
 5 {b31}
 3 {b32}
 1+ {b33}
-5 {b31}
-5 {b31}
-5 {b31}
-5 {b31}
-5+ {b31}
+5 {b32}
+5 {b32}
+5 {b32}
+5 {b32}
+5+ {b32}
 
-Squat (TM {squat}: 75%, 85%, 95%)
+Squat (TM {squat}: 75%(x10), 85%(x6), 95%(x2))
 5 {s31}
 3 {s32}
 1+ {s33}
@@ -484,6 +535,9 @@ Squat (TM {squat}: 75%, 85%, 95%)
 5 {s31}
 5 {s31}
 5+ {s31}
+
+Horizontal pull
+Hamstrings
 
     '''.format(squat=squat, bench=bench, deadlift=deadlift, press=press, 
     s11=rd5(squat*week1[0]/100), s12=rd5(squat*week1[1]/100), s13=rd5(squat*week1[2]/100),
